@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+body{
+    background: linear-gradient(rgb(124 169 231), rgb(215, 223, 122));
+}
+.cursor {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 200ms ease-out;
+    pointer-events: none;
+    position: absolute;
+    z-index: 100000000;
+    -webkit-user-select: none;
+    mix-blend-mode: color-dodge;
+    /*Safari*/
+    -ms-user-select: none;
+    /*IE10andIE11*/
+    user-select: none;
+    /*Standardsyntax*/
+    position: absolute;
+    border: 2px solid white;
+
+}
+
+.symbol img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    
+}
+
+.symbol h3{
+    margin-left: 10px;
+    color: #f2f2f2;
+    /* min-width: 160px; */
+    margin-right: 10px;
+}
+
+.symbol{
+    background-color: #555;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.symbol a{
+    float: left;
+    color: #f2f2f2;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.symbol a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.symbol a.active{
+    background-color: #ffe563;
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 5px;
+}
+
+
+.introduction{
+    padding: 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.intro-pic{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px #00000022;
+}
+
+.intro{
+    font-size: 50px;
+    height: 100%;
+}
+
+.intro b{
+    color: white;
+}
+
+.about-me{
+    text-align: center;
+    padding: 20px;
+    width: 700px;
+    border: 20px solid black;
+    margin: 0px 350px;
+    background-color: white;
+}
+
+.about-me h3{
+    font-size: 30px;
+}
+
+.outer-about-me ul,.about-me p{
+    font-size: 20px;
+}
+
+.outer-about-me{
+    background-color: rgb(50, 48, 48);
+    margin: 0px;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.outer-about-me img{
+    margin: 0px 50px;
+    width: 300px; 
+    height: 300px; 
+    object-fit: contain;
+}
+
+
+.heading{
+    color:white;
+    text-align: right;
+    text-decoration: double;
+    font-size: 35px;
+}
+
+.program{
+    text-align: left;
+    padding: 20px;
+}
+
+.timeline{
+    box-sizing: border-box;
+    background-color: #2f7e77;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:white;
+    top:0;
+    bottom:0;
+    left:50%;
+    margin-left:-3px;
+}
+
+.container{
+    padding: 10px 40px;
+    position: relative;
+    background-color:inherit;
+    width: 50%;
+}
+
+.container::after{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color:white;
+    border: 4px solid #ff5555;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left{
+    left:0;
+}
+
+.right{
+    left:50%;
+}
+
+.left::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before{
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+  }
+
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  #projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(118, 119, 130));
+  }
+
+  #projects img{
+    width: 40px;
+    height: 40px;
+  }
+
+  #projects h1{
+    color: white;
+    text-align: center;
+  }
+
+  #projects h2{
+    min-width: 120px;
+  }
+
+  .timeline-next{
+    box-sizing: border-box;
+    background-color: #8737cd;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.timeline-next::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:white;
+    top:0;
+    bottom:0;
+    left:50%;
+    margin-left:-3px;
+}
+
+#contact{
+    padding: 25px;
+    display: flex;
+}
+
+#contact h1{
+    margin-left: 180px;
+}
+
+.symbols{
+    padding: 50px;
+}
+
+.github, .fb, .linked-in, .insta, .email{
+    width: 50px;
+    height: 50px; 
+
+}
+.fb{
+    width: 45px;
+    height: 45px;
+}
+.linked-in{
+    width: 45px;
+    height: 45px;
+}
+.insta{
+    width: 50px;
+    height: 50px;
+}
+.email{
+    width: 50px;
+    height: 50px;
+}
+
