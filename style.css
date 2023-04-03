@@ -295,27 +295,14 @@ body{
 
 .symbols{
     padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
 }
 
 .github, .fb, .linked-in, .insta, .email{
     width: 50px;
     height: 50px; 
 
-}
-.fb{
-    width: 45px;
-    height: 45px;
-}
-.linked-in{
-    width: 45px;
-    height: 45px;
-}
-.insta{
-    width: 50px;
-    height: 50px;
-}
-.email{
-    width: 50px;
-    height: 50px;
 }
 
