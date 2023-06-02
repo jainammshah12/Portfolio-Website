@@ -8,98 +8,107 @@
     <title>Jainam Shah</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Logo.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="./script.js" defer></script>
 </head>
 
 <body>
-  <div class="cursor"></div>
     <div class="symbol" id="homepage">
         <div class="navigation">
-            <a class="active" href="#homepage" tabindex="0">Home</a>
-            <a href="#achievements" tabindex="1">Achievements</a>
+            <a class="active" href="#introduction" tabindex="0">Hey!</a>
+            <a href="#about-me" tabindex="1">About Me</a>
             <a href="#projects" tabindex="2">Projects</a>
-            <a href="#contact" tabindex="3">Contact</a>
+            <a href="#contact" tabindex="3">Get In Touch</a>
         </div>
         <div class="logo">
             <img src="Logo.jpg" class="image">
             <h3 class="name">Jainam Shah</h3>
+            <a href = "french.html">FR</a>
         </div>
     </div>
-    <div class="introduction">
+    <div id="introduction">
+        <div>
+            <h2 class="intro">Hi! &#128075<br> I'm <span><b>Jainam.</b></span></h2>
+            <br>
+            <p>Second year student, Software Developer.</p>
+        </div>
         <img src="./Jainam Pic.jpg" alt="Jainam Shah" class="intro-pic">
-        <h2 class="intro">Hello, this is <b>Jainam Shah</b>.<br>I am a Software Engineering student at Concordia University,
-            Montreal.</h2>
     </div>
 
-    <div class="outer-about-me">
-        <div class="about-me">
-            <h3>About Me:</h3>
-            <p>Well, I am a second year software engineering student. I love to work with like-minded people and work to change
-                this world. These are the programming languages I have worked on:</p>
-            <ul class="program">
-                <li>Python</li>
-                <li>C++</li>
-                <li>MySQL</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-    </div>
-    <div id="achievements">
-        <div class="timeline">
-            <h2 class="heading">Achievements</h2>
-            <div class="container left">
-                <div class="content">
-                    <h2>2022-23</h2>
-                    <p>Concordia University</p>
-                    <p>Director of Sponsorship - Hack Concordia</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h2>2020-21</h2>
-                    <p>Indian Language School </p>
-                    <p>Student Head - Students Voice Group</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="projects">
-        <h1>Projects</h1>
+    <div id = "about-me">
+        <h2 class = "u"><b>About Me:</b></h2>
         <br>
-        <div class="timeline-next">
-            <div class="container left">
-                <div class="content">
-                    <img src = "Logo.jpg">
-                    <h2><a href = "https://jainammshah12.github.io/Portfolio-Website/">Portfolio Website</a></h2>
-                    <p></p>
+        <div id = "inner-about-me">
+            <div class = "educate">
+                <div class = "container">
+                    <h3><b>&#127891 Current Student</b> <br><span>Bachelor of Engineering, Software Engineering</span> <br> Concordia University, Montreal
+                    </h3>
+                    <img width = "50px" height = "50px" src = "https://www.eduopinions.com/wp-content/uploads/2018/03/Concordia-University.png">
+                </div>
+                <br><br><br>
+                <div class = "container">
+                    <h3><b>&#127891 High School Diploma</b><br>Central Board of Secondary Education, India<br>Indian Language School, Lagos</h3>
+                    <img width = "55px" height = "55px" src = "https://ilslagos.com/images/footer-icon.png">
+                </div>            
+            </div>
+            <div id = "interests">
+                <h1><b>Just Love it! </b>&#128175</h1>
+                <br>
+                <div id = "development">
+                    <h2><a href = "french.html" class="text-decoration-none text-light fs-1.5">Technology</a> &#128187</h2>
+                </div>
+                <div id = "sports">
+                    <h2><a href = "french.html" class="text-decoration-none text-light fs-1.5">Sports </a>&#127939 </h2>
+                </div>
+                <div id = "music">
+                    <h2><a href = "french.html" class="text-decoration-none text-light fs-1.5">Music </a>&#127926</h2>
+                </div>
+                <div id = "food">
+                    <h2><a href = "french.html" class="text-decoration-none text-light fs-1.5">Food </a>&#127860</h2>
                 </div>
             </div>
-            <div class="container right">
-                <div class="content">
-                    <h2><a href = "https://jainammshah12.github.io/To-Do/">To Do List</a></h2>
-
-                </div>
+            
+        </div>
+    </div>
+    <div id = "projects">
+        <h1><b>Projects:</b> </h1>
+        <div class = "inner-projects">
+            <div id = "weather">
+                <h2 class = "text-decoration-none">&#127748 <b>Weather Web App</b> <h2>
+                <h3>Weather App using OpenWeatherMap API</h3>
+                <p>Technologies Used: HTML5, CSS3, JavaScript, jQuery<br><br>
+                <span style = "text-align: center;"><a href = "https://jainammshah12.github.io/Weather_forecasting/">Live Demo</a></span></p>
+                
+            </div>
+            <div id = "to-do">
+                <h2 class = "text-decoration-none">&#10004 <b>To-Do List </b> </h2>
+                <h3>Simple To-Do List using JavaScript</h3>
+                <p>Technologies Used: HTML5, CSS3, JavaScript<br><br>
+                <span style = "text-align: center;"><a href = "https://jainammshah12.github.io/To-Do/">Live Demo</a></span></p>
             </div>
         </div>
     </div>
+    
     <div id="contact">
-        <h1>Contact Me:</h1>
+        <h2>Let's Get In Touch: </h2>
         <div class = "symbols">
-            <span style = "border-width: 100px;
-            border-radius: 10px;"><a href="https://github.com/jainammshah12"><img src="git.png" class="github"></a></span>
-            <span style = "border-width: 100px;
-            border-radius: 10px;"><a href="https://www.instagram.com/jainam.shah.12/"><img
-                src="https://icon-library.com/images/facebook-icon-transparent-background/facebook-icon-transparent-background-2.jpg"
-                class="insta"></a></span>
-            <span style = "border-width: 100px;
-            border-radius: 10px;"><a href="https://www.facebook.com/profile.php?id=100016428615137"><img src="fb.png" class="fb"></a></span>
-            <span style = "border-width: 100px;
-            border-radius: 10px;"><a href="https://www.linkedin.com/in/jainam-shah-9246a91a9/"><img src="li.png" class="linked-in"></a></span>
-            <span style = "border-width: 100px;
-            border-radius: 10px;"><a href="mailto:jainammshah12@gmail.com"><img
-                src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png" class="email"></a></span>
+            <h3>Jainam<br> Shah</h3>
+            <div class = "con">
+                <a href="https://github.com/jainammshah12" aria-label="GitHub" target="_blank" ><img src="git.png" class="github"></a>
+            </div>
+            <div class = "con">
+                <a href="https://www.facebook.com/profile.php?id=100016428615137"><img src="fb.png" class="fb"></a>
+            </div>       
+            
+            <div class = "con">
+                <a href="https://www.linkedin.com/in/jainam-shah-9246a91a9/"><img src="li.png" class="linked-in"></a>
+            </div>
+            
+            <div class = "con">
+                <a href="mailto:jainammshah12@gmail.com"><img
+                    src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png" class="email"></a>
+            </div>
+            
         </div>
     </div>
 </body>
