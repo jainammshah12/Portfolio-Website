@@ -17,6 +17,7 @@
 
 body{
     position:relative;
+    width: 100%;
 }
 
 
@@ -322,4 +323,3 @@ body{
     height: 50px; 
 
 }
-

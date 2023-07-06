@@ -111,6 +111,27 @@
             
         </div>
     </div>
+    <script>
+        // Function to check screen size and replace page contents
+        function checkScreenSize() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+            if (screenWidth < 900) {
+                document.body.innerHTML = "<p> Please view on a desktop browser! </p>";
+                document.body.style.backgroundColor = " #124559";
+                document.body.style.color = "white";  
+                document.body.style.textAlign = "center";
+                document.body.style.fontSize = "30px";
+                document.body.style.paddingTop = "25%";
+            }
+        }
+
+        // Event listener for window resize
+        window.addEventListener('resize', checkScreenSize);
+
+        // Initial check when the page loads
+        checkScreenSize();
+    </script>
 </body>
 
 </html>

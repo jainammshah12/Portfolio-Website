@@ -28,7 +28,7 @@
     </div>
     <div id="introduction">
         <div>
-            <h2 class="intro">Salut! &#128075<br> J'suis <span><b>Jainam.</b></span></h2>
+            <h2 class="intro">Salut! &#128075<br> Je m'appelle <span><b>Jainam.</b></span></h2>
             <br>
             <p>Étudiant de deuxiéme année, Developper Logiciel.</p>
         </div>
@@ -112,5 +112,26 @@
         </div>
     </div>
 </body>
+<script>
+    // Function to check screen size and replace page contents
+    function checkScreenSize() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        if (screenWidth < 900) {
+            document.body.innerHTML = "<p> Please view on a desktop browser! </p>";
+            document.body.style.backgroundColor = " #124559";
+            document.body.style.color = "white";  
+            document.body.style.textAlign = "center";
+            document.body.style.fontSize = "30px";
+            document.body.style.paddingTop = "25%";
+        }
+    }
+
+    // Event listener for window resize
+    window.addEventListener('resize', checkScreenSize);
+
+    // Initial check when the page loads
+    checkScreenSize();
+</script>
 
 </html>
